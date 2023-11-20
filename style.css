@@ -8,18 +8,20 @@
 
 
 
-.grid-container2 {
-    display: grid;
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container2 {
     display: grid;
     place-self: center;
     grid-template-columns: repeat(4, 1fr);
-    width: 50%;
-    height: 100vh;
-    background-color: aqua;
-    gap: 5px;
+    width: 80vw;
+    height: 80vh;
+    gap: 15px;
+    margin-top: 5rem;
     grid-template-areas: 
     'section1 section1 section2 section3'
     'section1 section1 section2 section3'
@@ -63,4 +65,25 @@ color: aliceblue;
 background-color: black;
 
 grid-area: section5;
+}
+
+
+@media screen (min-width: 600px) {    
+
+    .grid-container2 {
+        display: grid;
+        place-self: center;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80vw;
+        height: 80vh;
+        gap: 15px;
+        margin-top: 5rem;
+        grid-template-areas: 
+        'section1 section1 section2 section3'
+        'section1 section1 section2 section3'
+        'section4 section5 section5 section3'
+        'section4 section5 section5 section3'
+        ;
+    }
+    
 }
