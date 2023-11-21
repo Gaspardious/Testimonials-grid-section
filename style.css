@@ -3,7 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+}
 
+h5 {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#qoutation {
+    position: relative;
+    left: 10rem;
+    bottom: 0.5cm;
+    z-index: 1;
 }
 
 .grid-card {
@@ -24,7 +46,6 @@ body {
 
 .grid-container2 {
     display: grid;
-    place-self: center;
     grid-template-columns: repeat(4, 1fr);
     width: 80vw;
     height: auto;
@@ -42,53 +63,52 @@ body {
     border-radius: 50%;
     border: 2px solid beige;
     margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
+.section1, .section2, .section3, .section4, .section5{
+    padding: 1.5rem;    
+    border-radius: 10px;
+    color: aliceblue;
+}
 
 .section1 {
-color: aliceblue;
 background-color: #733FC8;
-border-radius: 10px;
 grid-area: section1;
+position: relative;
 }
 
 .section2 {
-color: aliceblue;
 background-color: #49556B;
-border-radius: 10px;
 grid-area: section2;
 }
 
 .section3 {
-color: aliceblue;
 background-color: white;
 color: black;
-border-radius: 10px;
 grid-area: section3;
 }
 
 .section4 {
-color: aliceblue;
 background-color: white;
 color: black;
-border-radius: 10px;
 grid-area: section4;
 }
 
 .section5 {
-color: aliceblue;
 background-color: black;
 color: white;
-border-radius: 10px;
 grid-area: section5;
 }
 
 
-@media only screen and (max-width: 600px) {
+
+
+@media (min-width: 400px) and (max-width: 900px) {
  
     .grid-container2 {
         display: grid;
-        place-self: center;
         grid-template-columns: repeat(1, 1fr);
         width: 80vw;
         height: 60vh;
@@ -106,4 +126,4 @@ grid-area: section5;
 
     }
 
-
+    
